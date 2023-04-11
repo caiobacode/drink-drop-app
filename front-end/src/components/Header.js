@@ -9,11 +9,12 @@ class Header extends Component {
     const { history } = this.props;
     const type = history.location.pathname.split('/')[1];
     const { name } = getLocalStorage('user', { name: 'Matheus' });
+    const route = (type === 'customer' || type === 'seller') ? 'orders' : 'manage';
 
     const ROUTE = 'customer_products';
     const PRODUCTS = 'element-navbar-link-products';
     const ORDERS = 'element-navbar-link-orders';
-    const LOGOUT = 'element-navbar-link-logout';
+    const LOGOUT = 'element-navbar-link-logout'; // /customer/ordres
     const FULLNAME = 'element-navbar-user-full-name';
     const ROLETYPE = getOrderType(type);
     return (
@@ -32,7 +33,7 @@ class Header extends Component {
         }
         <button
           type="button"
-          onClick={ () => history.push(`/${type}/orders`) }
+          onClick={ () => history.push(`/${type}/${route}`) }
           data-testid={ `${ROUTE}__${ORDERS}` }
         >
           { ROLETYPE }

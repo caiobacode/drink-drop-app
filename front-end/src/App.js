@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 import { Login, Products, Register, Checkout, Order, Orders } from './pages';
+import ManagementAdm from './pages/ManagementAdm';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/customer/orders/:id" component={ Order } />
         <Route exact path="/seller/orders" component={ Orders } />
         <Route exact path="/seller/orders/:id" component={ Order } />
+        <Route exact path="/admin/manage" component={ ManagementAdm } />
         <Route exact path="/administrator/products" component={ Products } />
       </Switch>
     </div>
