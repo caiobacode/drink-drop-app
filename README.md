@@ -5,7 +5,7 @@
 </div>
 
 ## Description
-<p>building</p>
+<p>Drink Drop is a beer delivery app, a full stack project developed by an incredible team of five people. In this project, we had to reinforce and practice agile methodologies to be able to accomplish both the back-end and front-end from scratch.</p>
 
 ## 💻 Tecnologies used
 > [![JavaScript][JavaScript]][JavaScript-url]
