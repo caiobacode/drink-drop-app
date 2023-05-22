@@ -62,7 +62,7 @@ npm run db:reset
     <summary><strong>✏️ What i learned</strong></summary>
 
 + How to do a full stack application from scratch.
-+ How work with a five people team.
++ How to work with a five people team.
 + Agile methodologies(Kanban, Scrum).
   
   </details>
